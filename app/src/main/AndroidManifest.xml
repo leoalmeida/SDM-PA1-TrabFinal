@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.edu.ifspsaocarlos.sdm.trabalhofinal" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_xadrez_branco"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.edu.ifspsaocarlos.sdm.trabalhofinal.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.JogoDadoActivity" >
+        </activity>
+        <activity android:name=".activity.ConfigXadrezActivity" >
+        </activity>
+        <activity
+            android:name=".activity.JogoXadrezActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_crono_xadrez"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity android:name=".activity.JogoXadrezActivity2"/>
+
+    </application>
+
+</manifest>

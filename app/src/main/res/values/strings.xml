@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Trabalho Final2</string>
+    <string name="navigation_jogar_dado">Jogar Dado</string>
+    <string name="navigation_jogar_xadrez">Jogar Xadrez</string>
+    <string name="navigation_jogar_xadrez2">Jogar Xadrez 2</string>
+    <string name="title_activity_parametros_xadrez">Parâmetros Xadrez</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_crono_xadrez">CronoXadrezActivity</string>
+    <string name="start_button">Start</string>
+    <string name="pause_button">Pause</string>
+    <string name="stop_button">Stop</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="player2">Jogador 2</string>
+    <string name="player1">Jogador 1</string>
+    <string name="tempoJogo">Tempo (minutos)</string>
+    <string name="change_button">Finaliza Jogada</string>
+    <string name="iniciar">INICIAR</string>
+    <string name="parar">PARAR</string>
+    <string name="reiniciar">REINICIAR</string>
+    <string name="perdeu">Perdeu</string>
+    <string name="ganhou">Ganhou</string>
+    <string name="trocar">TROCAR</string>
+</resources>
