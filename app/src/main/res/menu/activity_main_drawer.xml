@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_dado" android:title="@string/navigation_jogar_dado" />
+        <item android:id="@+id/nav_xadrez" android:title="@string/navigation_jogar_xadrez" />
+    </group>
+
+</menu>
