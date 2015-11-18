@@ -9,6 +9,12 @@
     <string name="title_activity_parametros_xadrez">Parâmetros Xadrez</string>
 
     <string name="title_activity_crono_xadrez">CronoXadrezActivity</string>
-    <string name="dummy_button">Dummy Button</string>
+    <string name="start_button">Start</string>
+    <string name="pause_button">Pause</string>
+    <string name="stop_button">Stop</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="player2">Jogador 2</string>
+    <string name="player1">Jogador 1</string>
+    <string name="tempoJogo">Tempo (minutos)</string>
+    <string name="change_button">Finaliza Jogada</string>
 </resources>

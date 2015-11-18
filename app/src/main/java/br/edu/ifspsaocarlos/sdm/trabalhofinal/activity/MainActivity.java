@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity
 
         }
         else if (id == R.id.nav_xadrez) {
-            Intent intentConfiguracaoXadrez = new Intent(this, ConfigXadrezActivity.class);
+            Intent intentConfiguracaoXadrez = new Intent(this, JogoXadrezActivity.class);
             startActivityForResult(intentConfiguracaoXadrez,INTENT_CONFIGURACAO_XADREZ);
             return true;
         }

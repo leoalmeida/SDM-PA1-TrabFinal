@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Timer;
@@ -25,11 +26,12 @@ public class JogoXadrezActivity extends AppCompatActivity {
     private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
     private static final int UI_ANIMATION_DELAY = 300;
+    private static final int PLAYER_QTD = 2;
 
     private View mContentView;
     private View mControlsView;
     private boolean mVisible;
-    private List<Timer> timers;
+    private List<Timer> timers = new ArrayList<Timer>();
     private Timer timerActive;
     private Iterator<Timer> timerIterator;
     private TimerTask task;
@@ -42,8 +44,8 @@ public class JogoXadrezActivity extends AppCompatActivity {
         setContentView(R.layout.activity_crono_xadrez);
 
         mVisible = true;
-        mControlsView = findViewById(R.id.fullscreen_content_controls);
-        mContentView = findViewById(R.id.fullscreen_content);
+        mControlsView = findViewById(R.id.frame_controls);
+        mContentView = findViewById(R.id.frame_preview);
 
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,7 +56,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
 
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
 
-        startTimers(2);
+        startTimers(PLAYER_QTD);
         activateTimer();
     }
 
