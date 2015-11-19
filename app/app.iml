@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="TrabalhoFinal" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
-=======
-<module external.linked.project.id=":app" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$/.." external.system.id="GRADLE" external.system.module.group="SDM2-PA1P1-TrabFinal" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
->>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
@@ -94,11 +90,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/outputs" />
       <excludeFolder url="file://$MODULE_DIR$/build/tmp" />
     </content>
-<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
-=======
-    <orderEntry type="jdk" jdkName="Android API 23 Platform (1)" jdkType="Android SDK" />
->>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="recyclerview-v7-23.1.1" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.1.1" level="project" />

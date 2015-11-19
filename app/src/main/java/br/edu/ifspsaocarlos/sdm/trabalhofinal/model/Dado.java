@@ -21,10 +21,7 @@ public class Dado implements Serializable {
     private Map<Integer, Integer> faces = new HashMap<Integer, Integer>();
 
     public Dado(){
-<<<<<<< HEAD
-=======
-        // carrega o Map com o número e imagem das 6 faces
->>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
+
         faces.put(1,R.drawable.dado1);
         faces.put(2,R.drawable.dado2);
         faces.put(3,R.drawable.dado3);
@@ -35,23 +32,12 @@ public class Dado implements Serializable {
 
     public int jogarDado(Activity view) {
 
-<<<<<<< HEAD
         Audio.play(view, arquivoAudio);
 
         Random random = new Random();
 
         int numero = random.nextInt((faceMaior - faceMenor) + 1) + faceMenor;
 
-=======
-        // aciona audio do dado
-        Audio.play(view, arquivoAudio);
-
-        // Gera numero randomico entre 1 e 6
-        Random random = new Random();
-        int numero = random.nextInt((faceMaior - faceMenor) + 1) + faceMenor;
-
-        // retorna imagem da face sorteada
->>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
         return faces.get(numero);
 
 

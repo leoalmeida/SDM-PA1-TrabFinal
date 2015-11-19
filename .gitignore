@@ -5,3 +5,12 @@
 .DS_Store
 /build
 /captures
+gradle
+.idea
+TrabalhoFinal.iml
+br.edu.ifspsaocarlos.sdm.trabalhofinal-1.apk
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+settings.gradle
