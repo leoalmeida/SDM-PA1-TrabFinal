@@ -28,6 +28,11 @@
             android:label="@string/title_activity_crono_xadrez"
             android:theme="@style/FullscreenTheme" >
         </activity>
+<<<<<<< HEAD
+=======
+        <activity android:name=".activity.JogoXadrezActivity2"/>
+
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
     </application>
 
 </manifest>

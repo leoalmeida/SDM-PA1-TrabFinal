@@ -61,6 +61,14 @@ public class MainActivity extends AppCompatActivity
             startActivityForResult(intentConfiguracaoXadrez,INTENT_CONFIGURACAO_XADREZ);
             return true;
         }
+<<<<<<< HEAD
+=======
+        else if (id == R.id.nav_xadrez2) {
+            Intent intentConfigXadrez = new Intent(this, ConfigXadrezActivity.class);
+            startActivity(intentConfigXadrez);
+            return true;
+        }
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

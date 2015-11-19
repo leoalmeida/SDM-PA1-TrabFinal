@@ -40,7 +40,12 @@
             android:ems="10"
             android:id="@+id/txtJogador2"/>
 
+<<<<<<< HEAD
         <TextView style="@style/Widget.DescriptionBar"
+=======
+        <TextView
+            android:id="@+id/textView4"
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tempoJogo" />
@@ -54,29 +59,48 @@
             android:selectAllOnFocus="true" />
 
 
+<<<<<<< HEAD
         <LinearLayout style="?android:buttonBarStyle"
+=======
+        <LinearLayout
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="bottom|center_horizontal">
 
+<<<<<<< HEAD
             <Button style="?android:buttonBarButtonStyle"
                 android:id="@+id/start_button"
                 android:layout_width="0dp"
+=======
+            <Button android:id="@+id/start_button"
+                android:layout_width="match_parent"
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/start_button" />
 
+<<<<<<< HEAD
             <Button style="?android:buttonBarButtonStyle"
                 android:id="@+id/pause_button"
                 android:layout_width="0dp"
+=======
+            <Button android:id="@+id/pause_button"
+                android:layout_width="match_parent"
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/pause_button" />
 
+<<<<<<< HEAD
             <Button style="?android:buttonBarButtonStyle"
                 android:id="@+id/stop_button"
                 android:layout_width="0dp"
+=======
+            <Button android:id="@+id/stop_button"
+                android:layout_width="match_parent"
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/stop_button" />
@@ -88,8 +112,13 @@
     <FrameLayout
         android:id="@+id/frame_preview"
         style="?metaButtonBarStyle"
+<<<<<<< HEAD
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+=======
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
         android:layout_gravity="bottom|center_horizontal"
         android:background="@color/black_overlay"
         android:orientation="horizontal"
@@ -108,6 +137,7 @@
             <TextView
                 android:id="@+id/waiting_player"
                 android:layout_width="wrap_content"
+<<<<<<< HEAD
                 android:layout_height="wrap_content"
                 android:text="@string/stop_button" />
 
@@ -129,6 +159,23 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin_medium" />
 
+=======
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <TextClock
+            android:id="@+id/running_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button android:id="@+id/action_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/change_button" />
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 
     </FrameLayout>
 

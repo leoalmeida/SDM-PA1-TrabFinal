@@ -5,5 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="black_overlay">#66000000</color>
+<<<<<<< HEAD
     <color name="color_1">#E91E63</color>
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 </resources>

@@ -1,17 +1,26 @@
 package br.edu.ifspsaocarlos.sdm.trabalhofinal.activity;
 
 import android.annotation.SuppressLint;
+<<<<<<< HEAD
 import android.content.Context;
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+<<<<<<< HEAD
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+=======
+import android.util.Log;
+import android.view.MotionEvent;
+import android.view.View;
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -27,7 +36,10 @@ import br.edu.ifspsaocarlos.sdm.trabalhofinal.R;
  */
 public class JogoXadrezActivity extends AppCompatActivity {
 
+<<<<<<< HEAD
     private final static String TAG = "JogoXadrezActivity";
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
     private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
     private static final int UI_ANIMATION_DELAY = 300;
@@ -35,7 +47,10 @@ public class JogoXadrezActivity extends AppCompatActivity {
 
     private View mContentView;
     private View mControlsView;
+<<<<<<< HEAD
     private View mControlsButtom;
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
     private boolean mVisible;
     private List<Timer> timers = new ArrayList<Timer>();
     private Timer timerActive;
@@ -52,7 +67,10 @@ public class JogoXadrezActivity extends AppCompatActivity {
         mVisible = true;
         mControlsView = findViewById(R.id.frame_controls);
         mContentView = findViewById(R.id.frame_preview);
+<<<<<<< HEAD
         mControlsButtom = findViewById(R.id.floating_shape);
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +80,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
         });
 
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+<<<<<<< HEAD
         View shape = mContentView.findViewById(R.id.floating_shape);
 
         /**
@@ -88,12 +107,17 @@ public class JogoXadrezActivity extends AppCompatActivity {
                 return true;
             }
         });
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
 
         startTimers(PLAYER_QTD);
         activateTimer();
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
     private void startTimers(int quantity) {
         for (int i = 0;i < quantity;i++){
             timers.add(new Timer());
@@ -164,7 +188,10 @@ public class JogoXadrezActivity extends AppCompatActivity {
             actionBar.hide();
         }
         mControlsView.setVisibility(View.GONE);
+<<<<<<< HEAD
         mControlsButtom.setVisibility(View.VISIBLE);
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
         mVisible = false;
 
         // Schedule a runnable to remove the status and navigation bar after a delay
@@ -211,7 +238,10 @@ public class JogoXadrezActivity extends AppCompatActivity {
                 actionBar.show();
             }
             mControlsView.setVisibility(View.VISIBLE);
+<<<<<<< HEAD
             mControlsButtom.setVisibility(View.GONE);
+=======
+>>>>>>> 315cea18a2d92afb49083bd375b259d9f7d19710
         }
     };
 
