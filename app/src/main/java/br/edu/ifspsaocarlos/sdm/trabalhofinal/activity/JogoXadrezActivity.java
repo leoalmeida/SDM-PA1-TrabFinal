@@ -1,13 +1,17 @@
 package br.edu.ifspsaocarlos.sdm.trabalhofinal.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.util.AttributeSet;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -23,6 +27,7 @@ import br.edu.ifspsaocarlos.sdm.trabalhofinal.R;
  */
 public class JogoXadrezActivity extends AppCompatActivity {
 
+    private final static String TAG = "JogoXadrezActivity";
     private static final boolean AUTO_HIDE = true;
     private static final int AUTO_HIDE_DELAY_MILLIS = 3000;
     private static final int UI_ANIMATION_DELAY = 300;
@@ -30,6 +35,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
 
     private View mContentView;
     private View mControlsView;
+    private View mControlsButtom;
     private boolean mVisible;
     private List<Timer> timers = new ArrayList<Timer>();
     private Timer timerActive;
@@ -46,6 +52,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
         mVisible = true;
         mControlsView = findViewById(R.id.frame_controls);
         mContentView = findViewById(R.id.frame_preview);
+        mControlsButtom = findViewById(R.id.floating_shape);
 
         mContentView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,10 +62,37 @@ public class JogoXadrezActivity extends AppCompatActivity {
         });
 
         //findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
+        View shape = mContentView.findViewById(R.id.floating_shape);
+
+        /**
+         * Sets a {@Link View.OnTouchListener} that responds to a touch event on shape2.
+         */
+
+        shape.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                int action = motionEvent.getActionMasked();
+                /* Raise view on ACTION_DOWN and lower it on ACTION_UP. */
+                switch (action) {
+                    case MotionEvent.ACTION_DOWN:
+                        Log.d(TAG, "ACTION_DOWN on view.");
+                        view.setTranslationZ(120);
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        Log.d(TAG, "ACTION_UP on view.");
+                        view.setTranslationZ(0);
+                        break;
+                    default:
+                        return false;
+                }
+                return true;
+            }
+        });
 
         startTimers(PLAYER_QTD);
         activateTimer();
     }
+
 
     private void startTimers(int quantity) {
         for (int i = 0;i < quantity;i++){
@@ -130,6 +164,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
             actionBar.hide();
         }
         mControlsView.setVisibility(View.GONE);
+        mControlsButtom.setVisibility(View.VISIBLE);
         mVisible = false;
 
         // Schedule a runnable to remove the status and navigation bar after a delay
@@ -176,6 +211,7 @@ public class JogoXadrezActivity extends AppCompatActivity {
                 actionBar.show();
             }
             mControlsView.setVisibility(View.VISIBLE);
+            mControlsButtom.setVisibility(View.GONE);
         }
     };
 

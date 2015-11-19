@@ -40,8 +40,7 @@
             android:ems="10"
             android:id="@+id/txtJogador2"/>
 
-        <TextView
-            android:id="@+id/textView4"
+        <TextView style="@style/Widget.DescriptionBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/tempoJogo" />
@@ -55,26 +54,29 @@
             android:selectAllOnFocus="true" />
 
 
-        <LinearLayout
+        <LinearLayout style="?android:buttonBarStyle"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="bottom|center_horizontal">
 
-            <Button android:id="@+id/start_button"
-                android:layout_width="match_parent"
+            <Button style="?android:buttonBarButtonStyle"
+                android:id="@+id/start_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/start_button" />
 
-            <Button android:id="@+id/pause_button"
-                android:layout_width="match_parent"
+            <Button style="?android:buttonBarButtonStyle"
+                android:id="@+id/pause_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/pause_button" />
 
-            <Button android:id="@+id/stop_button"
-                android:layout_width="match_parent"
+            <Button style="?android:buttonBarButtonStyle"
+                android:id="@+id/stop_button"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/stop_button" />
@@ -86,8 +88,8 @@
     <FrameLayout
         android:id="@+id/frame_preview"
         style="?metaButtonBarStyle"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:layout_gravity="bottom|center_horizontal"
         android:background="@color/black_overlay"
         android:orientation="horizontal"
@@ -106,21 +108,27 @@
             <TextView
                 android:id="@+id/waiting_player"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="@string/stop_button" />
 
         </LinearLayout>
+        
+        <View
+            android:id="@+id/floating_shape"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_huge"
+            android:background="@drawable/shape"
+            android:elevation="@dimen/margin_large"
+            android:layout_gravity="center"/>
+
 
         <TextClock
             android:id="@+id/running_player"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium" />
 
-        <Button android:id="@+id/action_button"
-                style="?metaButtonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/change_button" />
 
     </FrameLayout>
 
