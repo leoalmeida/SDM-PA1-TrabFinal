@@ -1,8 +1,10 @@
 package br.edu.ifspsaocarlos.sdm.trabalhofinal.activity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -13,9 +15,8 @@ import android.view.MenuItem;
 import br.edu.ifspsaocarlos.sdm.trabalhofinal.R;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
-    private static final int INTENT_JOGAR_DADO = 0;
-    private static final int INTENT_CONFIGURACAO_XADREZ = 1;
+        implements NavigationView.OnNavigationItemSelectedListener, OptionsDialogFragment.NoticeDialogListener{
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,13 +53,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_dado) {
             Intent intentJogarDado = new Intent(this, JogoDadoActivity.class);
-            startActivityForResult(intentJogarDado, INTENT_JOGAR_DADO);
+            startActivityForResult(intentJogarDado, R.string.INTENT_JOGAR_DADO);
             return true;
 
         }
         else if (id == R.id.nav_xadrez) {
             Intent intentConfiguracaoXadrez = new Intent(this, JogoXadrezActivity.class);
-            startActivityForResult(intentConfiguracaoXadrez,INTENT_CONFIGURACAO_XADREZ);
+            startActivityForResult(intentConfiguracaoXadrez, R.string.INTENT_CONFIGURACAO_XADREZ);
             return true;
         }
 
@@ -68,13 +69,31 @@ public class MainActivity extends AppCompatActivity
             return true;
         }
         else if (id == R.id.nav_quiz) {
-            Intent intentConfigXadrez = new Intent(this, ConfigXadrezActivity.class);
-            startActivity(intentConfigXadrez);
-            return true;
+            // Create an instance of the dialog fragment and show it
+            DialogFragment dialog = new OptionsDialogFragment();
+            dialog.show(getSupportFragmentManager(), "OptionsDialogFragment");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    @Override
+    public void onDialogItemClick(DialogFragment dialog, int selection ) {
+        switch(selection){
+            case 0:
+                Intent easyIntent = new Intent(this,EasyQuizActivity.class);
+                startActivity(easyIntent);
+                break;
+            case 1:
+                Intent hardIntent=new Intent(this,HardQuizActivity.class);
+                startActivity(hardIntent);
+                break;
+            default:
+                return;
+        }
+
     }
 }

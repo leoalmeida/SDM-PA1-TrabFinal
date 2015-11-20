@@ -9,14 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="br.edu.ifspsaocarlos.sdm.trabalhofinal.activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.JogoDadoActivity" >
         </activity>
@@ -29,7 +33,16 @@
             android:theme="@style/FullscreenTheme" >
         </activity>
         <activity android:name=".activity.JogoXadrezActivity2"/>
-
+        <activity
+            android:name=".activity.EasyQuizActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="@string/quiz_text_easy" >
+        </activity>
+        <activity
+            android:name=".activity.HardQuizActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:label="@string/quiz_text_hard" >
+        </activity>
     </application>
 
 </manifest>

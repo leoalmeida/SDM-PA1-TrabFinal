@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/jogo_facil"
+          android:title="Fácil">
+    </item>
+    <item android:id="@+id/jogo_dificil"
+          android:title="Difícil">
+    </item>
+    <item android:id="@+id/jogo_continuar"
+          android:title="Continuar">
+    </item>
+</menu>

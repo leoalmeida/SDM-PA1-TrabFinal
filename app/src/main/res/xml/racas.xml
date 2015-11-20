@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<racas>
+    <item>
+        <id>1</id>
+        <titulo>Persa</titulo>
+        <developer>Gato de origem blablabla</developer>
+        <detalhe>Detalhes da raça</detalhe>
+        <duration>-</duration>
+        <thumb_url>android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/persa</thumb_url>
+        <dica1>Dica 1</dica1>
+        <dica2>Dica 2</dica2>
+        <dica3>Dica 3</dica3>
+    </item>
+    <item>
+        <id>2</id>
+        <titulo>Exótica</titulo>
+        <developer>Gato de origem blablabla</developer>
+        <detalhe>Detalhes da raça</detalhe>
+        <duration>-</duration>
+        <thumb_url>android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/exotica</thumb_url>
+        <dica1>Dica 1</dica1>
+        <dica2>Dica 2</dica2>
+        <dica3>Dica 3</dica3>
+    </item>
+    <item>
+        <id>3</id>
+        <titulo>Himalaia</titulo>
+        <developer>Gato de origem blablabla</developer>
+        <detalhe>Detalhes da raça</detalhe>
+        <duration>-</duration>
+        <thumb_url>android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/himalaia</thumb_url>
+        <dica1>Dica 1</dica1>
+        <dica2>Dica 2</dica2>
+        <dica3>Dica 3</dica3>
+    </item>
+    <item>
+        <id>4</id>
+        <titulo>Haitiano</titulo>
+        <developer>Gato de origem blablabla</developer>
+        <detalhe>Detalhes da raça</detalhe>
+        <duration>-</duration>
+        <thumb_url>android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/haitiano</thumb_url>
+        <dica1>Dica 1</dica1>
+        <dica2>Dica 2</dica2>
+        <dica3>Dica 3</dica3>
+    </item>
+</racas>

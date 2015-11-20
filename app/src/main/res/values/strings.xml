@@ -24,5 +24,26 @@
     <string name="perdeu">Perdeu</string>
     <string name="ganhou">Ganhou</string>
     <string name="trocar">TROCAR</string>
+    <string name="quiz_text_easy">Fácil</string>
+    <string name="quiz_text_hard">Difícil</string>
+    <string name="quiz_text_continua">Difícil</string>
+    <string name="quiz_text_dificuldade">Escolha a dificuldade...</string>
+
+
+    <string name="INTENT_JOGAR_DADO">0</string>
+    <string name="INTENT_CONFIGURACAO_XADREZ">1</string>
+    <string name="INTENT_JOGAR_QUIZ">2</string>
+    <string name="KEY_ROOT">racas</string>
+    <string name="KEY_OPTION">item</string>
+    <string name="KEY_ID">id</string>
+    <string name="KEY_TITULO">titulo</string>
+    <string name="KEY_FONTE">developer</string>
+    <string name="KEY_DETALHES">detalhe</string>
+    <string name="KEY_DURATION">duration</string>
+    <string name="KEY_IMAGEM">thumb_url</string>
+    <string name="KEY_LINK">link</string>
+    <string name="KEY_DICA1">dica1</string>
+    <string name="KEY_DICA2">dica2</string>
+    <string name="KEY_DICA3">dica3</string>
 
 </resources>

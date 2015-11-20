@@ -6,4 +6,10 @@
 
     <color name="black_overlay">#66000000</color>
     <color name="color_1">#E91E63</color>
+    <color name="blue_letters">#ff4bacc6</color>
+    <color name="blue_letters2">#ff4bacff</color>
+    <color name="black">#ff000000</color>
+    <color name="bege">#ffDDDDDD</color>
+    <color name="sepia">#FFFBF0D9</color>
+    <color name="text_color">#FF5F4B32</color>
 </resources>
