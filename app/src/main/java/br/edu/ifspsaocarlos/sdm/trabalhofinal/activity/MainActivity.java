@@ -53,13 +53,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_dado) {
             Intent intentJogarDado = new Intent(this, JogoDadoActivity.class);
-            startActivityForResult(intentJogarDado, R.string.INTENT_JOGAR_DADO);
+            startActivityForResult(intentJogarDado, new Integer(getString(R.string.INTENT_JOGAR_DADO)));
             return true;
 
         }
         else if (id == R.id.nav_xadrez) {
             Intent intentConfiguracaoXadrez = new Intent(this, JogoXadrezActivity.class);
-            startActivityForResult(intentConfiguracaoXadrez, R.string.INTENT_CONFIGURACAO_XADREZ);
+            startActivityForResult(intentConfiguracaoXadrez, new Integer(getString(R.string.INTENT_CONFIGURACAO_XADREZ)));
             return true;
         }
 
