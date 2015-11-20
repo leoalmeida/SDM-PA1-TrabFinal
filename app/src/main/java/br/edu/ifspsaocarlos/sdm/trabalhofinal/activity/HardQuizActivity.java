@@ -210,9 +210,9 @@ public class HardQuizActivity extends AppCompatActivity implements View.OnClickL
                     imageView = (ImageView) findViewById(index+1);
                     //imageView.setBackgroundColor(R.color.blue_letters);
                     if (b.getText().toString().toLowerCase().compareTo("ó")==0){
-                        imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/ic_letrao2"));
+                        imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/ic_letrao2"));
                     }else{
-                        imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/ic_letra"+  b.getText().toString().toLowerCase()));
+                        imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/ic_letra"+  b.getText().toString().toLowerCase()));
                     }
                     break;
                 }
@@ -224,9 +224,9 @@ public class HardQuizActivity extends AppCompatActivity implements View.OnClickL
             imageView = (ImageView) findViewById(quantLetras);
             //imageView.setBackgroundColor(R.color.blue_letters);
             if (b.getText().toString().toLowerCase().compareTo("ó")==0){
-                imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/ic_letrao2"));
+                imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/ic_letrao2"));
             }else{
-                imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/ic_letra"+ b.getText().toString().toLowerCase()));
+                imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/ic_letra"+ b.getText().toString().toLowerCase()));
             }
             respEscolhida += b.getText();
 

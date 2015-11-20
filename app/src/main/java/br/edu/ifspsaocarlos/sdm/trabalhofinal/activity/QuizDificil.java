@@ -198,7 +198,7 @@ public class QuizDificil extends Activity implements View.OnClickListener{
                     preencheVazio=true;
                     imageView = (ImageView) findViewById(index+1);
                     //imageView.setBackgroundColor(R.color.blue_letters);
-                    imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/letra"+ b.getText().toString().toLowerCase()));
+                    imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/letra"+ b.getText().toString().toLowerCase()));
                     break;
                 }
             }
@@ -208,7 +208,7 @@ public class QuizDificil extends Activity implements View.OnClickListener{
             quantLetras++;
             imageView = (ImageView) findViewById(quantLetras);
             //imageView.setBackgroundColor(R.color.blue_letters);
-            imageView.setImageURI(Uri.parse("android.resource://br.com.petmobiledev.crazycats/drawable/letra"+ b.getText().toString().toLowerCase()));
+            imageView.setImageURI(Uri.parse("android.resource://br.edu.ifspsaocarlos.sdm.trabalhofinal/drawable/letra"+ b.getText().toString().toLowerCase()));
             respEscolhida += b.getText();
 
         }
